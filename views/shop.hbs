@@ -1,0 +1,15 @@
+<h1>வணக்கம் {{user}} | {{tamilName}}</h1>
+<h2> உங்கள் கடைகள் </h2>
+
+<a href="/shop/add">கடையைச் சேர்க்க</a>
+{{#if shops}}
+    <ul>
+    {{#each shops}}
+        <li>{{shopNameTamil}} | {{shopNameEnglish}} <a href="/shop/explore/{{_id}}">explore</a> </li>
+    {{/each}}
+    </ul>
+{{else}}
+    <h1 style="color: red">கடைகள் சேர்க்கப்படவில்லை !</h1>
+{{/if}}
+
+
